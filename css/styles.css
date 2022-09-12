@@ -57,7 +57,7 @@ body {
   font-weight: 400;
 }
 .header {
-  border-bottom: 1px;
+  border: 1px solid #ececec;
 }
 .header-logo,
 .footer-logo {
