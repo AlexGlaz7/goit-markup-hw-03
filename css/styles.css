@@ -10,6 +10,23 @@
   --background-color: #2f303a;
   --background-color-team: #f5f4fa;
 }
+
+img {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+}
 .list {
   list-style: none;
 }
@@ -24,6 +41,15 @@
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   margin: -1px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  margin: 95px 0;
 }
 body {
   font-family: 'Roboto', sans-serif;
@@ -45,6 +71,27 @@ body {
 }
 .accent-logo-footer {
   color: var(--white-color);
+}
+.header-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.header-item + .header-item {
+  margin-left: 50px;
+}
+.header-box,
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+.header-list-nav {
+  display: flex;
+  padding-left: 93px;
+}
+.header-list {
+  display: flex;
+  margin-left: auto;
 }
 .header-link {
   font-weight: 500;
@@ -75,6 +122,7 @@ body {
 }
 .hero {
   background: var(--background-color);
+  padding: 200px 0;
 }
 .hero-title {
   font-weight: 900;
@@ -84,8 +132,13 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 30px;
+  max-width: 650px;
+  margin: 0 auto;
 }
 .hero-btn {
+  display: block;
+  margin: 0 auto;
   background: var(--accent-color);
   cursor: pointer;
   font-family: inherit;
@@ -94,18 +147,29 @@ body {
   line-height: 1.9;
   letter-spacing: 0.06em;
   color: var(--white-color);
+  padding: 10px 32px;
+  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
   background: var(--accent-color-hero);
 }
-
+.sec-padding-bot-0 {
+  padding-bottom: 0;
+}
+.peculiarities-list {
+  display: flex;
+}
+.peculiarities-item + .peculiarities-item {
+  padding-left: 30px;
+}
 .peculiarities-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .peculiarities-description {
   font-size: 14px;
@@ -113,20 +177,43 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-color);
 }
+.work-list {
+  display: flex;
+}
+.work-item {
+  flex-basis: calc((100%-2 * 30px) / 3);
+}
+.img-workers {
+  margin-bottom: 30px;
+}
 .workers {
   background: var(--background-color-team);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.workers-list {
+  display: flex;
+}
+.workers-item {
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+    0px 2px 1px rgb(0 0 0 / 20%);
+  border-radius: 0px 0px 4px 4px;
+  flex-basis: calc((100%-3 * 30px) / 4);
 }
 .workers-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .workers-description {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  text-align: center;
 }
 .team-title,
 .work-title {
@@ -135,9 +222,12 @@ body {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
 }
 .footer {
   background: var(--background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-link-add {
   font-style: normal;
@@ -163,6 +253,9 @@ body {
 .footer-link:focus {
   color: var(--accent-color);
 }
+.portfolio {
+  padding-top: 94px;
+}
 .portfolio-btn {
   cursor: pointer;
   font-family: inherit;
@@ -171,6 +264,8 @@ body {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+  border: 1px solid transparent;
+  border-radius: 4px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -182,10 +277,30 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-left: 24px;
 }
 .portfolio-description {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
+  padding-left: 24px;
+}
+.portfolio-list-btn {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-item-btn + .portfolio-item-btn {
+  margin-left: 8px;
+}
+.portfolio-list-photo {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 34px;
+  padding-bottom: 94px;
+}
+.portfolio-item {
+  flex-basis: calc((100%-2 * 30px) / 3);
+  background: #ffffff;
+  border: 1px solid #eeeeee;
 }
