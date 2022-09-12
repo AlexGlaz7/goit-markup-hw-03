@@ -132,9 +132,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-bottom: 30px;
   max-width: 650px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 .hero-btn {
   display: block;
